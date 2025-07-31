@@ -10,6 +10,7 @@
 
 struct Personel
 {
+
     char tcKimlikNo[12];
     char isim[16];
     char soyisim[16];
@@ -20,6 +21,7 @@ struct Personel
  // Yardımcı fonksiyonlar
 int tcKimlikNoKontrol(const char *tcKimlikNo) 
 {
+
     FILE *dosya = fopen(DOSYA_ADI, "r");
     
     if (dosya == NULL)
