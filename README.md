@@ -44,8 +44,9 @@ int tcKimlikNoKontrol(const char *tcKimlikNo)
     return 0; // TC kimlik numarası kullanılmıyor
 }
 
-void listelePersonel() 
+void listelePersonel()
 {
+
     FILE *dosya = fopen(DOSYA_ADI, "r");
     
     if (dosya == NULL) 
@@ -71,6 +72,7 @@ void listelePersonel()
 
 void eklePersonel() 
 {
+
     FILE *dosya = fopen(DOSYA_ADI, "a");
     
     if (dosya == NULL) 
@@ -109,6 +111,7 @@ void eklePersonel()
 
 void silPersonel() 
 {
+
     FILE *dosya = fopen(DOSYA_ADI, "r");
     
     if (dosya == NULL) 
@@ -159,6 +162,7 @@ void silPersonel()
 
 void guncellePersonel() 
 {
+
     FILE *dosya = fopen(DOSYA_ADI, "r");
     
     if (dosya == NULL)
@@ -219,6 +223,7 @@ void guncellePersonel()
 
 void araPersonel() 
 {
+
     FILE *dosya = fopen(DOSYA_ADI, "r");
     
     if (dosya == NULL) 
@@ -261,10 +266,9 @@ void araPersonel()
 
 int main() 
 {
-    int secim;
 
+    int secim;
     do {
-    
         printf("\n--- Personel Kayit Programi ---\n");
         printf("1. Kayit Listele\n");
         printf("2. Kayit Ekle\n");
