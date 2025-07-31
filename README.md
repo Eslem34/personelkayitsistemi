@@ -10,7 +10,6 @@
 
 struct Personel
 {
-
     char tcKimlikNo[12];
     char isim[16];
     char soyisim[16];
