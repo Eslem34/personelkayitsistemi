@@ -19,6 +19,7 @@ struct Personel
 };
 
  // Yardımcı fonksiyonlar
+ 
 int tcKimlikNoKontrol(const char *tcKimlikNo) 
 {
 
